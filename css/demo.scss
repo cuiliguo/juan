@@ -1,0 +1,148 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    font-style: normal;
+    box-sizing: border-box;
+}
+li{
+    list-style: none;
+}
+body{
+    font-size: .32rem;
+}
+@mixin num($h){
+    width: 100%;
+    height: $h;
+}
+%full{
+    width: 100%;
+    height: 100%;
+}
+%ben{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+%center{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+.sect{
+    flex: 1;
+    overflow-y: scroll;
+    background: #fff;
+}
+.info{
+    width: 90%;
+    height: 112px;
+    margin: 0 auto;
+    margin-top: .24rem;
+}
+.info dl{
+    width: 100%;
+    height: 112px;
+    border: 1px solid #ccc;
+    box-shadow: 4px 4px 5px #ccc;
+}
+.info dt{
+    height:70px;
+    width: 100%;
+    background: #FD6060;
+    @extend %ben;
+    span{
+        padding-left: .42rem;
+        font-size: .52rem;
+        color: #fff;
+        
+        i{
+            font-size: 1.32rem;
+            color: #fff;
+        }
+    }
+    b{
+        color: #fff;
+        font-weight: 100;
+        font-size:.56rem;
+        padding-right: .28rem;
+     }
+}
+.info dd{
+    height:42px;
+    width: 100%;
+    background:#FFFFFF;
+}
+.info dd p{
+    color: #20B377;
+    font-size: .24rem;
+    padding-left: .42rem;
+    margin-top: .20rem;
+}
+.info dd em{
+    color: #ccc;
+    font-size: .24rem;
+    padding-left: .42rem;
+}
+
+
+
+
+
+
+
+
+
+
+.infoa{
+    width: 90%;
+    height: 112px;
+    margin: 0 auto;
+    margin-top: .24rem;
+}
+.infoa dl{
+    width: 100%;
+    height: 112px;
+    border: 1px solid #ccc;
+    box-shadow: 4px 4px 5px #ccc;
+     margin-top: .24rem;
+}
+.infoa dt{
+    height:70px;
+    width: 100%;
+    background: #4BC670;
+    @extend %ben;
+    span{
+        padding-left: .42rem;
+        font-size: .52rem;
+        color: #fff;
+        
+        i{
+            font-size: 1.32rem;
+            color: #fff;
+        }
+    }
+    b{
+        color: #fff;
+        font-weight: 100;
+        font-size:.56rem;
+        padding-right: .28rem;
+     }
+}
+.infoa dd{
+    height:42px;
+    width: 100%;
+    background:#FFFFFF;
+}
+.infoa dd p{
+    color: #20B377;
+    font-size: .24rem;
+    padding-left: .42rem;
+    margin-top: .20rem;
+}
+.infoa dd em{
+    color: #ccc;
+    font-size: .24rem;
+    padding-left: .42rem;
+}
